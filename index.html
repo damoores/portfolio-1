@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
   <head>
     <met charset="utf-8">
     <title>Blog</title>
     <meta name= "viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="vendor/normalize.css">
-    <link rel="stylesheet" href="styles/styles.css">
+    <!-- <link rel="stylesheet" href="styles/styles.css"> -->
   </head>
   <body>
     <header>
@@ -23,21 +23,35 @@
       </ul>
     </nav>
     <div id="logo"></div>
-    <article>
-        <p>Hello! I'm a web developer based in Seattle, WA. I graduated from a code bootcamp called Code Fellows where I learned about the fundamentals of Javascript and full-stack development.</p>
-        <p>I'm able to collaboratively design web applications from scratch using MVP architecture built with clean HTML, CSS, and Javascript that satisfies shareholder requirements captured in user stories.</p>
-        <p>You can find me on <a href="www.Github.com">Github</a>,
-        <a href="www.twitter.com">Twitter</a>, or
-        <a href="www.instagram.com">Instagram</a>.
-        <p>I'm available for projects and full time work. <a href="mailto:rashid.baset@gmail.com?Subject=Hello%20again" target="_top">Hit me up</a>.
-        </p>
+  <section id="about-me">
+      <p>Hello! I'm a web developer based in Seattle, WA. I graduated from a code bootcamp called Code Fellows where I learned about the fundamentals of Javascript and full-stack development.</p>
+      <p>I'm able to collaboratively design web applications from scratch using MVP architecture built with clean HTML, CSS, and Javascript that satisfies shareholder requirements captured in user stories.</p>
+      <p>You can find me on <a href="www.Github.com">Github</a>,
+      <a href="www.twitter.com">Twitter</a>, or
+      <a href="www.instagram.com">Instagram</a>.
+      <p>I'm available for projects and full time work. <a href="mailto:rashid.baset@gmail.com?Subject=Hello%20again" target="_top">Hit me up</a>.
+      </p>
+  </section>
+  <section id="projects">
+    <article class="template">
+      <header>
+        <h1></h1>
+        <span class="tagline"></span>
+        <span class="published"></span>
+      </header>
+      <section class="project-description">
+      </section>
+      <span class="tag"></span>
     </article>
+  </section>
   </main>
   <footer>
     <p>&copy; 2016 Free Software Foundation, Inc. http://fsf.org/
  Everyone is permitted to copy and distribute verbatim copies
  of this license document, but changing it is not allowed.</p>
   </footer>
-  <!-- <script src="scripts/article.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="scripts/portfoliodata.js"></script>
+  <script src="scripts/app.js"></script>
   </body>
 </html>
