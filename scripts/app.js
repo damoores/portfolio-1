@@ -9,17 +9,21 @@ function Portfolio (opts) {
 }
 
 Portfolio.prototype.toHtml = function() {
-  var $newPortfolio = $('article.template').clone();
+  // var $newPortfolio = $('article.template').clone();
+  //
+  // $newPortfolio.find('header h1').text(this.title);
+  // $newPortfolio.find('.project-description').html(this.description);
+  // $newPortfolio.find('.published').html(this.published);
+  // $newPortfolio.find('.tagline').html(this.tagline);
+  // $newPortfolio.find('.published').html(this.published);
+  // $newPortfolio.find('.tag').html(this.tag);
+  //
+  // $newPortfolio.removeClass('template');
+  // return $newPortfolio;
+  var $source = $('#portfolio-template').html();
+  var template = Handlebars.compile($source);
+  return template(this);
 
-  $newPortfolio.find('header h1').text(this.title);
-  $newPortfolio.find('.project-description').html(this.description);
-  $newPortfolio.find('.published').html(this.published);
-  $newPortfolio.find('.tagline').html(this.tagline);
-  $newPortfolio.find('.published').html(this.published);
-  $newPortfolio.find('.tag').html(this.tag);
-
-  $newPortfolio.removeClass('template');
-  return $newPortfolio;
 };
 
 portfolioData.forEach(function(ele){
