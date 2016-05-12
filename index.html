@@ -6,6 +6,16 @@
     <meta name= "viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="vendor/normalize.css">
     <!-- <link rel="stylesheet" href="styles/styles.css"> -->
+    <script id="portfolio-template" type="text/x-handlebars-template">
+      <article>
+        <header>
+          <h1>{{title}}</h1>
+          <p>{{published}}</p>
+          <p>{{tagline}}</p>
+          <p>{{description}}</p>
+          <p>{{tag}}</p>
+      </article>
+    </script>
   </head>
   <body>
     <header>
@@ -51,6 +61,7 @@
  of this license document, but changing it is not allowed.</p>
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.amd.min.js"></script>
   <script src="scripts/portfoliodata.js"></script>
   <script src="scripts/app.js"></script>
   <scripts src="scripts/view.js"></script>
