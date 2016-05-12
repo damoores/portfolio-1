@@ -2,7 +2,7 @@ portfolioArray = [];
 
 function Portfolio (opts) {
   this.title = opts.title;
-  this.publishedOn = opts.publishedOn;
+  this.published = opts.published;
   this.tagline = opts.tagline;
   this.description = opts.description;
   this.tag = opts.tag;
@@ -13,9 +13,9 @@ Portfolio.prototype.toHtml = function() {
 
   $newPortfolio.find('header h1').text(this.title);
   $newPortfolio.find('.project-description').html(this.description);
-  $newPortfolio.find('.published').html(this.publishedOn);
+  $newPortfolio.find('.published').html(this.published);
   $newPortfolio.find('.tagline').html(this.tagline);
-  $newPortfolio.find('.published').html(this.publishedOn);
+  $newPortfolio.find('.published').html(this.published);
   $newPortfolio.find('.tag').html(this.tag);
 
   $newPortfolio.removeClass('template');
