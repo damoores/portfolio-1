@@ -6,6 +6,8 @@ portfolioView.handleMainNav = function (){
     var navTabs = $(this).attr('data-content');
     $('section[id = "'+ navTabs + '"]').fadeIn();
   });
+  $('.main-nav .tab:first').click();
+
 };
 
 $(document).ready(
